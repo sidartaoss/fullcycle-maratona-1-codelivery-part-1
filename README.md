@@ -53,9 +53,9 @@ Nesta versão inicial, trabalhamos apenas com o backend. Posteriormente, serão 
 
   - Funcionamento Básico
 
-    - O RabbitMQ trabalha com um Publisher e um Consumer.
-    - O Publisher publica uma mensagem para ser consumida pelo Consumer.
-    - A mensagem é publicada para uma fila, só que não é enviada diretamente para a fila - ela é enviada para uma Exchange.
+    - O RabbitMQ trabalha com um Publisher e um Consumer;
+    - O Publisher publica uma mensagem para ser consumida pelo Consumer;
+    - A mensagem é publicada para uma fila, só que não é enviada diretamente para a fila - ela é enviada para uma Exchange;
     - E o que faz a Exchange? A Exchange contém regras e, baseado nessas regras, as mensagens são encaminhadas para as filas que foram configuradas.
 
   - Principais Tipos de Exchange
@@ -70,9 +70,9 @@ Nesta versão inicial, trabalhamos apenas com o backend. Posteriormente, serão 
     - Qual é a idéia principal?
       - A partir de um Publisher (ou Producer), há vários Consumers que podem estar interessados em receber uma mensagem. Mas, cada Consumer vai consumir apenas a mensagem que fizer mais sentido para ele. Ou seja, ele fica escutando filas específicas. No entanto, não se trata de um Fanout: ao enviar a mensagem para a Exchange, a intenção não é replicar para todas as filas. Então, trabalha-se com uma regra. Essa regra vai permitir que a mensagem seja enviada de acordo com o que foi configurado.
     - E como acontece a configuração?
-      - Através de um Bind. Bind é o relacionamento entre a fila e a Exchange. Para criar esse relacionamento, é configurando um Routing Key, ou seja, uma chave de roteamento.
-      - Então, para cada fila, é configurado uma Routing Key e, no momento de enviar uma mensagem, ela é enviada para uma Exchange com a Routing Key X.
-      - E, na seqüência, a Exchange encaminha para a fila que estiver vinculada à Routing Key X.
+      - Através de um Bind. Bind é o relacionamento entre a fila e a Exchange. Para criar esse relacionamento, é configurando um Routing Key, ou seja, uma chave de roteamento;
+      - Então, para cada fila, é configurado uma Routing Key e, no momento de enviar uma mensagem, ela é enviada para uma Exchange com a Routing Key X;
+      - E, na seqüência, a Exchange encaminha para a fila que estiver vinculada à Routing Key X;
       - Assim, a mensagem é sempre enviada para a mesma Exchange, mas a Routing Key é diferente, ou seja, de acordo com a Routing Key, a Exchange pode mandar para uma fila diferente.
 
 ### Simulator
