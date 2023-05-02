@@ -66,7 +66,7 @@ Nesta versão inicial, trabalhamos apenas com o backend. Posteriormente, serão 
 
   - Direct Exchange
 
-    - No caso do sistema, é a Exchange que faz mais sentido utilizar, sendo bastante comum o uso desse tipo de Exchange.
+    - O uso desse tipo de Exchange é bastante comum, sendo também a Exchange mais utilizada no projeto. 
     - Qual é a idéia principal?
       - A partir de um Publisher (ou Producer), há vários Consumers que podem estar interessados em receber uma mensagem. Mas, cada Consumer vai consumir apenas a mensagem que fizer mais sentido para ele. Ou seja, ele fica escutando filas específicas. No entanto, não se trata de um Fanout: ao enviar a mensagem para a Exchange, a intenção não é replicar para todas as filas. Então, trabalha-se com uma regra. Essa regra vai permitir que a mensagem seja enviada de acordo com o que foi configurado.
     - E como acontece a configuração?
