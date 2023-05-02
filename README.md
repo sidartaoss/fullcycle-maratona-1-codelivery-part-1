@@ -113,7 +113,7 @@ Interessante notar a utilização do padrão Worker Pool na aplicação.
 
 7. Executar o comando: `go run simulator.go`;
 
-8. Acompanhar os logs de mensagens publicadas para o RabbitMQ com os dados de latitude e longitude. Ao enviar latitude 0 e longitude 0 sinaliza que a última posição foi enviada;
+8. Acompanhar os logs de mensagens publicadas para o RabbitMQ com os dados de latitude e longitude. Ao enviar latitude 0 e longitude 0, sinaliza que a última posição foi enviada;
 
 ![Simulator - messages sent to RabbitMQ](./images/simulator-messages-sent-to-rabbitmq.png)
 
