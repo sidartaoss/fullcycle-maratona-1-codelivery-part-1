@@ -24,11 +24,14 @@ Dinâmica do sistema:
 
 ## Tecnologias
 
-Nesta versão inicial, trabalhamos apenas com o backend. Posteriormente, serão adicionadas as tecnologias de frontend, integração contínua, deploy e observabilidade.
+#### Operate What You Build
 
-- Backend
-  - Golang
-  - RabbitMQ
+- Nesta versão inicial, trabalhamos apenas com o backend. Posteriormente, serão adicionadas as tecnologias de frontend, integração contínua, deploy e observabilidade.
+
+  - Backend
+  
+    - Golang
+    - RabbitMQ
 
 ## Formatos de Comunicação
 
