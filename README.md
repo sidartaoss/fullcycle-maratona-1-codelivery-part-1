@@ -10,6 +10,9 @@ Requisitos:
 - Ela também quer ter o feedback instantâneo de quando a entrega é realizada;
 - Caso haja necessidade de acompanhar a entrega com mais detalhes, o sistema deverá informar, em tempo real, a localização do motorista no mapa.
 
+#### Que problemas de negócio o projeto poderia resolver?
+- O projeto pode ser adaptado para casos de uso onde é necessário rastrear e monitorar carros, caminhões, frotas e remessas em tempo real, como na logística e na indústria automotiva.
+
 Dinâmica do sistema:
 
 1. A aplicação Order (React/Nest.js) é responsável pelas ordens de serviço (ou pedidos) e vai conter a tela de agendamento de pedidos de entrega. A criação de uma nova ordem de serviço começa o processo para que o motorista entregue a mercadoria;
